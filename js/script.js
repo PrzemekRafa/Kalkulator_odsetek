@@ -12,7 +12,7 @@ function obliczZysk (wpl, iL, oK, opr, pod) {
     var potega = Math.pow(jedenPlusRprzezM, nRazyM);
     var kapital = wpl * potega;
     
-    return kapital;
+    return kapital.toFixed(2);
 }
 
 function oblicz() {
