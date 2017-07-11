@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator odsetek</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="">
+        <label class="pola_formularza" for="kwota_wplaty">Wpłata w PLN</label>
+        <input class="pola_formularza" id="wplata" type="number" value="0" name="kwota_wplaty" min="100">
+        
+        <label class="pola_formularza" for="kapitalizacja">Częstotliwość kapitalizacji</label>
+        <select class="pola_formularza" name="kapitalizacja" id="okres-kapitalizacji">
+            <option value="12">Miesięcznie</option>
+            <option value="4">Kwartalnie</option>
+            <option value="1" selected>Rocznie</option>
+        </select>
+        
+        <label class="pola_formularza" for="raty">Ilość rat</label>
+        <input class="pola_formularza" id="ilosc-rat" name="raty" type="number" value="1" min="1">
+        
+        <label class="pola_formularza" for="procenty">Stopa zwrotu w %</label>
+        <input class="pola_formularza" id="oprocentowanie" name="procenty" type="number" value="10" min="0">
+        
+        <label class="pola_formularza" for="podatek_belki">Uwzględnij podatek Belki 19%</label>
+        <input class="pola_formularza" id="podatek" type="checkbox" name="podatek_belki">
+        
+        <button class="pola_formularza" onclick="oblicz()">Oblicz!</button>
+    </form>
+    
+    <div id="wynik">
+        
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
